@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet">
+    <title>Enlace sobre Imagen</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .image-container {
+            position: relative; 
+            width: 100%;
+            min-height: 100svh;
+        }
+
+        .title {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            translate: -50% 0;
+            font-family: 'Meie Script', cursive;
+            font-size: 2em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            text-wrap: nowrap;
+        }
+
+        .neon-arrow {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            translate: -50% 0;
+            font-size: 2em;
+            color: #fff;
+            text-shadow: 0 0 10px #ff9aff, 0 0 20px #ff9aff, 0 0 30px #ff9aff, 0 0 40px #ff9aff;
+            animation: float 2s ease-in-out infinite;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(20px);
+                opacity: 0.7;
+            }
+        }
+
+        .background-image {
+            width: 100%; 
+            min-height: 100svh; 
+            object-fit: cover; 
+            display: block;
+        }
+
+        .add-to-discord-link {
+            position: absolute;
+            bottom: 8%;
+            left: 50%; 
+            translate: -50% 0;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-family: monospace, sans-serif;
+            border-radius: 5px;
+            color: #fff;
+            padding: 10px 25px;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            background-color: #ff9aff;
+            box-shadow: 0 0 5px #ef97e8;
+        }
+
+        .add-to-discord-link:hover {
+            box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8, 0 0 20px #fff inset;
+        }
+
+        @media (min-width: 1024px) {
+            .title {
+                font-size: 6em;
+            }
+
+            .neon-arrow {
+                font-size: 3em;
+            }
+
+            .add-to-discord-link {
+                padding: 20px 40px;
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <h1 class="title">Willem Dafate Bot</h1>
+        <div class="neon-arrow">↓</div>
+        <img src="psbattle-willem-dafoe-doing-the-splits-v0-4hzmD_c8B0F6ENKVV_klyGNnSd5g7X_1AHS5Sv8LEvE.webp" class="background-image" alt="Willem Dafoe with the legs spread">
+        <a href="https://discord.com/api/oauth2/authorize?client_id=1504067220769079346&permissions=8&scope=bot" class="add-to-discord-link">Add to Discord</a>
+    </div>
+</body>
+</html>
